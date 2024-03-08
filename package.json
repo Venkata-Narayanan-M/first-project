@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
-    "build-watch" :"tsc basics.ts app.ts  -w"
+    "start": "lite-server"
   },
   "author": "",
   "license": "ISC",

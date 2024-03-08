@@ -1,10 +1,10 @@
-function add(n1: number, n2: number, s1: string) {
+function add1(n1: number, n2: number, s1: string) {
   return n1 + n2 + s1;
 }
 
 function printResult(num: number) {
   console.log("Result: " + num);
-  return () => add(num, num, "result");
+  return () => add1(num, num, "result");
 }
 
 function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {

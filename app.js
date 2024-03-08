@@ -1,8 +1,15 @@
-function add(n1, n2, s1) {
-    return n1 + n2 + s1;
+"use strict";
+var userInput;
+userInput = 5;
+userInput = "Max";
+var userName;
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-function printResult(num) {
-    console.log("Result: " + num);
-    return function () { return add(num, num, "result"); };
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-console.log(printResult(10)());
+var result1 = generateError("An error occurred!", 500);
+console.log(result1);
+var button = document.querySelector("button");
+var map = new Map();
